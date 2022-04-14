@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,30 @@
     <link rel="stylesheet" href="/assets/css/start_game.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="num_questions">
-        <p id="number">of 10</p>
-        <script>
-            let elem = document.getElementById('number');
-            for(let i = 1; i < 10; i++) {
-                elem.innerText = i;
 
-            }
-        </script>
+<body>
+    <script>
+        window.onload = function() {
+            let num = document.getElementById('number');
+            num.innerHTML = `${i} of ${maxQuestion}`;
+        }
+    </script>
+    <div class="num_questions">
+        <p id="number"></p>
+    <div class="questions"></div>
+    <div class="options">
+        <div data-id="0" class="option option1"></div>
+        <div data-id="1" class="option option2"></div>
+        <div data-id="2" class="option option3"></div>
+        <div data-id="2" class="option option4"></div>
+    </div>
+
+        <button id="btn"><span>Нажми меня</span></button>
+        <script src="assets/js/script.js"></script>
+
+
+
     </div>
 </body>
+
 </html>
