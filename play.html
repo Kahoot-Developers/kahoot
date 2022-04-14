@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/play.css">
+</head>
+<body>
+    <section id="header">
+        <div id="info-header">
+            <p>With game-pin: </p>
+            <p id="code"></p>
+            <script>
+                let elem = document.getElementById('code');
+                let b = elem.innerHTML = Math.round(Math.random() * 999999);
+            </script>
+        </div>
+    </section>
+    <section id="main">
+        <div id="info-content">
+            <a href="start_game.html">Start game!</a>
+        </div>
+    </section>
+</body>
+</html>
