@@ -10,12 +10,17 @@
 <body>
     <section id="header">
         <div id="info-header">
-            <p>51</p>
+            <p>With game-pin: </p>
+            <p id="code"></p>
+            <script>
+                let elem = document.getElementById('code');
+                let b = elem.innerHTML = Math.round(Math.random() * 999999);
+            </script>
         </div>
     </section>
     <section id="main">
         <div id="info-content">
-            <p>14</p>
+            <a href="start_game.html">Start game!</a>
         </div>
     </section>
 </body>

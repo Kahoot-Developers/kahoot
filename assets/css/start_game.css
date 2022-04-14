@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #449634;
+}
+
+#number {
+    margin-top: 10%;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+}

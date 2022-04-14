@@ -8,10 +8,39 @@
     width: 100%;
     height: 40%;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-header p{
+    font-size: 40px;
 }
 
 #info-content{
     width: 100%;
     height: 60%;
     background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    padding: 20px;
+}
+
+
+#info-content a{
+    text-decoration: none;
+    color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#info-content a:hover{
+background-color: #ffffff;
+border: 1px solid #ffffff;
+color: #3c3c3c;
+transition: 1s all;
 }
