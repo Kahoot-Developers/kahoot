@@ -10,28 +10,35 @@
 </head>
 
 <body>
-    <script>
-        window.onload = function() {
-            let num = document.getElementById('number');
-            num.innerHTML = `${i} of ${maxQuestion}`;
-        }
-    </script>
-    <div class="num_questions">
-        <p id="number"></p>
-    <div class="questions"></div>
-    <div class="options">
-        <div data-id="0" class="option option1"></div>
-        <div data-id="1" class="option option2"></div>
-        <div data-id="2" class="option option3"></div>
-        <div data-id="2" class="option option4"></div>
+    <div class="quiz-over-modal">
+        <div class="content">
+            <h1>Хороший результат!</h1>
+            <p>Ты ответил на 
+                <span id="correct-answer"></span> из
+                <span id="number-of-all-qustions-2"></span> вопроса
+                <button id="btn-try-again">Попробуй снова</button>
+            </p>
+        </div>
     </div>
-
-        <button id="btn"><span>Нажми меня</span></button>
-        <script src="assets/js/script.js"></script>
-
-
-
+    <div class="quiz-container">
+        <div class="question-number">
+            <h3>Вопрос</h3>
+            <span id="number-of-question"></span>
+            из
+            <span id="number-of-all-question"></span>
+        </div>
+        <div id="questions"></div>
+        <div class="options">
+            <div data-id="0" class="option option1"></div>
+            <div data-id="1" class="option option2"></div>
+            <div data-id="2" class="option option3"></div>
+            <div data-id="3" class="option option4"></div>
+        </div>
+    <div class="button">
+        <button id="btn-next">Дальше</button>
     </div>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

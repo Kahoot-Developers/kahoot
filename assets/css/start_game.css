@@ -8,18 +8,71 @@ body{
     background-color: #449634;
 }
 
-#number {
-    margin-top: 10%;
-    padding: 20px;
-    font-size: 30px;
-    color: white;
-}
-
-.options{
+.quiz-container {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #ffffff;
+    width:600px;
+    min-height: 400px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.question-number{
+    display: flex;
+}
+
+#btn-next{
+    width: 30%;
+    border-radius: 5px;
+    background-color: #449634;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 5%;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
 }
 
 .option {
-    background-color: #635e5e;
+    background-color: #cccccc;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.option:hover {
+    background-color: #ccccccaf;
+}
+
+.options div.correct {
+    color: #ffffff;
+    background-color: green;
+}
+
+.options div.wrong {
+    color: #ffffff;
+    background-color: red;
+}
+
+.options div.disabled {
+    pointer-events:  none;
+}
+
+.quiz-over-modal {
+    visibility: collapse;
+}
+
+.quiz-over-modal div.active{
+    visibility: visible;
 }
